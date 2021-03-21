@@ -32,7 +32,7 @@ Random things I do to debug the containers.
         + openvpn --config /etc/openvpn/udp1194.conf
         Tue Jul  1 06:56:48 2014 OpenVPN 2.3.2 x86_64-pc-linux-gnu [SSL (OpenSSL)] [LZO] [EPOLL] [PKCS11] [eurephia] [MH] [IPv6] built on Mar 17 2014
         Tue Jul  1 06:56:49 2014 Diffie-Hellman initialized with 2048 bit key
-        Tue Jul  1 06:56:49 2014 Control Channel Authentication: using '/etc/openvpn/pki/ta.key' as a OpenVPN static key file
+        Tue Jul  1 06:56:49 2014 Control Channel Authentication: using '/etc/openvpn/pki/tls_crypt_v2.key' as a OpenVPN static key file
         Tue Jul  1 06:56:49 2014 Outgoing Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
         Tue Jul  1 06:56:49 2014 Incoming Control Channel Authentication: Using 160 bit message hash 'SHA1' for HMAC authentication
         Tue Jul  1 06:56:49 2014 Socket Buffers: R=[212992->131072] S=[212992->131072]

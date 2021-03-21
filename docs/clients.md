@@ -29,10 +29,10 @@ After doing so, you will find the following files in each of the `$cn` directori
 
     ca.crt
     $cn-combined.ovpn # Combined configuration file format. If your client recognices this file then only this file is needed.
-    $cn.ovpn          # Separated configuration. This configuration file requires the other files ca.crt dh.pem $cn.crt $cn.key ta.key
+    $cn.ovpn          # Separated configuration. This configuration file requires the other files ca.crt dh.pem $cn.crt $cn.key $cn_tls_crypt_v2.key
     $cn.crt
     $cn.key
-    ta.key
+    $cn_tls_crypt_v2.key
 
 ## Revoking Client Certificates
 

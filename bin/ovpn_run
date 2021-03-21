@@ -81,6 +81,12 @@ if [ "$EASYRSA_PKI/crl.pem" -nt "$OPENVPN/crl.pem" ]; then
     chmod 644 "$OPENVPN/crl.pem"
 fi
 
+# Use a copy of tls_crypt_v2.key as the key needs to be readable by the user/group
+if [ "$EASYRSA_PKI/tls_crypt_v2.key" -nt "$OPENVPN/tls_crypt_v2.key" ]; then
+    cp -f "$EASYRSA_PKI/tls_crypt_v2.key" "$OPENVPN/tls_crypt_v2.key"
+    chmod 644 "$OPENVPN/tls_crypt_v2.key"
+fi
+
 if [ -r "$OPENVPN/crl.pem" ]; then
     addArg "--crl-verify" "$OPENVPN/crl.pem"
 fi
